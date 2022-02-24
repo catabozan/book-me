@@ -8,7 +8,10 @@ use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenNormalClasses;
 use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenPrivateMethods;
 use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenTraits;
 use NunoMaduro\PhpInsights\Domain\Metrics\Architecture\Classes;
+use PHP_CodeSniffer\Standards\Generic\Sniffs\Files\LineLengthSniff;
 use SlevomatCodingStandard\Sniffs\Commenting\UselessFunctionDocCommentSniff;
+use SlevomatCodingStandard\Sniffs\ControlStructures\DisallowEmptySniff;
+use SlevomatCodingStandard\Sniffs\ControlStructures\DisallowShortTernaryOperatorSniff;
 use SlevomatCodingStandard\Sniffs\Namespaces\AlphabeticallySortedUsesSniff;
 use SlevomatCodingStandard\Sniffs\TypeHints\DeclareStrictTypesSniff;
 use SlevomatCodingStandard\Sniffs\TypeHints\DisallowMixedTypeHintSniff;
@@ -76,10 +79,13 @@ return [
     'remove' => [
         AlphabeticallySortedUsesSniff::class,
         DeclareStrictTypesSniff::class,
+        DisallowEmptySniff::class,
         DisallowMixedTypeHintSniff::class,
+        DisallowShortTernaryOperatorSniff::class,
         ForbiddenDefineFunctions::class,
         ForbiddenNormalClasses::class,
         ForbiddenTraits::class,
+        LineLengthSniff::class,
         ParameterTypeHintSniff::class,
         PropertyTypeHintSniff::class,
         ReturnTypeHintSniff::class,

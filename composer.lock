@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb3b329953a56860fe0ef822c1a58c3d",
+    "content-hash": "63e26aa3ecb025bcce81a082dddf901c",
     "packages": [
         {
             "name": "brick/math",
@@ -5161,12 +5161,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "1e914f8afcb8ae2210843ac60a731456dae3755c"
+                "reference": "7328f5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/1e914f8afcb8ae2210843ac60a731456dae3755c",
-                "reference": "1e914f8afcb8ae2210843ac60a731456dae3755c",
+                "url": "https://api.github.com/repos/composer/composer/zipball/7328f5e",
+                "reference": "7328f5e",
                 "shasum": ""
             },
             "require": {
@@ -5259,7 +5259,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-23T13:43:28+00:00"
+            "time": "2022-02-24T10:17:46+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -10437,12 +10437,14 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "composer/composer": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
